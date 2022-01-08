@@ -1,0 +1,9 @@
+_site
+_assets
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+mix-manifest.json
+yarn-error.log
+node_modules
+vendor
