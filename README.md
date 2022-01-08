@@ -1,8 +1,9 @@
+&nbsp;
 ![Jekyllist Boilerplate Logo](https://atakanoz.com/img/jekyllist-logo.svg)
 
 # Jekyllist - Modern Boilerplate on Jekyll
 
-Jekyllist is a production ready boilerplate for humans who wants to build simple websites (portfolio sites, basic landing pages, coming soon templates) with the modern stack.
+Jekyllist is a production ready boilerplate for humans who wants to build simple websites (portfolio sites, basic landing pages, coming soon templates) with the modern tech stack.
 
 #### Features
 
@@ -29,7 +30,7 @@ At the time I decided to develop this boilerplate, I was looking for a simple an
 - 🚀 Production-ready
 
 ### Requirements
-
+Before using this boilerplate, please follow the official [Jekyll guideline](https://jekyllrb.com/docs/) to setup Jekyll on your local machine.
 - Ruby version 2.5.0 or higher
 - Bundler
 - Jekyll
