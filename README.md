@@ -1,7 +1,7 @@
 &nbsp;
-![Jekyllist Boilerplate Logo](https://atakanoz.com/img/jekyllist-logo.svg)
-
-# Jekyllist - Modern Boilerplate on Jekyll
+![Jekyllist Boilerplate Logo](https://atakanoz.com/img/jekyllist-github.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/atakanoz/jekyllist) ![GitHub repo size](https://img.shields.io/github/repo-size/atakanoz/jekyllist) ![Lines of code](https://img.shields.io/tokei/lines/github/atakanoz/jekyllist) ![GitHub package.json version](https://img.shields.io/github/package-json/v/atakanoz/jekyllist?color=%23) ![GitHub last commit](https://img.shields.io/github/last-commit/atakanoz/jekyllist)
+## Jekyllist - Modern Boilerplate on Jekyll
 
 Jekyllist is a production ready boilerplate for humans who wants to build simple websites (portfolio sites, basic landing pages, coming soon templates) with the modern tech stack.
 
