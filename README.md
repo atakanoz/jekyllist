@@ -42,10 +42,9 @@ Before using this boilerplate, please follow the official [Jekyll guideline](htt
 Run the following command on your local environment:
 
 ```
-git clone --depth=1 https://github.com/atakanoz/jekyllist.git ./my-project-name
-cd my-project-name
-bundle install
-yarn
+git clone --depth=1 https://github.com/atakanoz/jekyllist.git ./my-project-name \
+cd my-project-name \
+bundle install && yarn
 ```
 
 Then, you can run locally in development mode with live reload:
