@@ -1,9 +1,9 @@
 const mix = require('laravel-mix');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
-const childProcess = require('child_process')
+const childProcess = require('child_process');
+const CopyWatched = require('laravel-mix-copy-watched');
 
 mix
   .setPublicPath('./');
@@ -27,6 +27,11 @@ mix
         ]
       }
     }
+  })
+  .copyDirectoryWatched('_resources/fonts/', '_assets/fonts/')
+  .copyDirectoryWatched('_resources/images/', '_assets/images/')
+  .after(() => {
+		childProcess.execSync('bundle exec jekyll build')
 	});
 
 mix
@@ -52,13 +57,6 @@ mix
 mix
   .webpackConfig({
     plugins: [
-      new CopyWebpackPlugin({
-        patterns: [
-          { from: "_resources/icons/", to: "_assets/icons/", noErrorOnMissing: true },
-					{ from: "_resources/fonts/", to: "_assets/fonts/", noErrorOnMissing: true },
-					{ from: "_resources/images/", to: "_assets/images/", noErrorOnMissing: true },
-        ],
-      }),
       new ImageminPlugin({
         test: /\.(jpe?g|png|jpg|gif|svg)$/i,
         plugins: [
@@ -89,16 +87,12 @@ mix
 			'_includes/**/*',
 			'_drafts/**/*',
 			'_resources/**/*'
-		]
+    ],
+    reloadDelay: 300
   });
 
 mix
   .disableNotifications();
-
-mix
-	.after(() => {
-		childProcess.execSync('bundle exec jekyll build')
-	});
 
 mix
   .version();
